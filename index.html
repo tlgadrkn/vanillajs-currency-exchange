@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <title>Vanilla CURRENCY CONVERTER</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center m-4 text-white">CURRENCY CONVERTER</h1>
+        <div class="row">
+            <form class="needs-validation" novalidate>
+
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label for="convertAmount">Amount</label>
+                        <input type="text" class="form-control " id="convertAmount" required>
+                        
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="convertFrom">From</label>
+                        <select class="custom-select " id="convertFrom" required>
+                            <option disabled>...</option>
+                        </select>
+                       
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="convertTo">To</label>
+                        <select class="custom-select" id="convertTo" required>
+                            <option selected value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                       
+                    </div>
+                    <button class="btn btn-primary" type="submit">Convert</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <nav class="navbar fixed-bottom ">
+        <a class="nav-link" target='blank' href="https://github.com/tlgadrkn">Github</a>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
